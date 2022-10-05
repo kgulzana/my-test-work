@@ -94,6 +94,7 @@ span.information__title-red {
   font-size: 28px;
   font-weight: 700;
   line-height: 39.2px;
+  padding-top: 90px;
 }
 
 .advantages__subtitle {
@@ -127,12 +128,13 @@ p.advantages__refuzal {
   font-weight: 400;
   text-decoration: underline;
   margin-top: 30px;
+  padding-bottom: 90px;
 }
 
 /* skills */
 
 .page__skills.skills {
-  margin-top: 427px;
+  margin-top: 120px;
 }
 h2.skills__title {
   font-size: 46px;
@@ -157,7 +159,7 @@ p.skills__text-second {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 20px;
+  gap: 92px;
 }
 .page__slider.slider {
   position: relative;
@@ -173,7 +175,7 @@ p.skills__text-second {
   align-items: center;
   cursor: pointer;
   z-index: 9;
-  top: 251px;
+  top: 425px;
   left: 80px;
   padding: 39px;
   border: 1px solid grey;
@@ -181,8 +183,20 @@ p.skills__text-second {
 }
 
 .nxt-btn {
-  left: 91px;
+  left: 175px;
 }
 button.pre-btn {
   left: 1px;
+}
+
+/* slider */
+.slider__title {
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 50.6px;
+  margin-bottom: 60px;
+}
+.slider__image {
+  width: 320px;
+  height: 180px;
 }

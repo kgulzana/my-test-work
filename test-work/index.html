@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
@@ -148,48 +152,92 @@
           </div>
         </section>
         <div class="page__slider slider">
-          <h2>Best-Selling Programs are Included in Membership</h2>
-          <button class="pre-btn">
+          <h2 class="slider__title">
+            Best-Selling Programs<br />
+            are Included in Membership
+          </h2>
+          <div class="swiper-button-next nxt-btn"></div>
+          <div class="swiper-button-prev pre-btn"></div>
+          <div class="swiper-pagination"></div>
+          <!-- <button class="pre-btn">
             <img src="./assets/images/slider/Icon-left.svg" alt="left" />
           </button>
           <button class="nxt-btn">
             <img src="./assets/images/slider/Icon-right.svg" alt="right" />
-          </button>
-          <div class="slider__container">
-            <div class="slider__card">
-              <div class="slider__image">
+          </button> -->
+          <div class="swiper mySwiper slider__container">
+            <div class="swiper-wrapper slider__card">
+              <div class="swiper-slide slider__image">
                 <img src="./assets/images/slider/Rectangle 1.jpg" alt="img1" />
               </div>
             </div>
-            <div class="slider__card">
-              <div class="slider__image">
+            <div class="swiper-wrapper slider__card">
+              <div class="swiper-slide slider__image">
                 <img src="./assets/images/slider/Rectangle 2.jpg" alt="img2" />
               </div>
             </div>
-            <div class="slider__card">
-              <div class="slider__image">
+            <div class="swiper-wrapper slider__card">
+              <div class="swiper-slide slider__image">
                 <img src="./assets/images/slider/Rectangle 3.jpg" alt="img3" />
               </div>
             </div>
-            <div class="slider__card">
-              <div class="slider__image">
+            <div class="swiper-wrapper slider__card">
+              <div class="swiper-slide slider__image">
                 <img src="./assets/images/slider/Rectangle 4.jpg" alt="img4" />
               </div>
             </div>
-            <div class="slider__card">
-              <div class="slider__image">
+            <div class="swiper-wrapper slider__card">
+              <div class="swiper-slide slider__image">
                 <img src="./assets/images/slider/Rectangle 1.jpg" alt="img5" />
               </div>
             </div>
-            <div class="slider__card">
-              <div class="slider__image">
+            <div class="swiper-wrapper slider__card">
+              <div class="swiper-slide slider__image">
                 <img src="./assets/images/slider/Rectangle 2.jpg" alt="img6" />
+              </div>
+            </div>
+            <div class="swiper-wrapper slider__card">
+              <div class="swiper-slide slider__image">
+                <img src="./assets/images/slider/Rectangle 2.jpg" alt="img6" />
+              </div>
+            </div>
+            <div class="swiper-wrapper slider__card">
+              <div class="swiper-slide slider__image">
+                <img src="./assets/images/slider/Rectangle 3.jpg" alt="img6" />
+              </div>
+            </div>
+            <div class="swiper-wrapper slider__card">
+              <div class="swiper-slide slider__image">
+                <img src="./assets/images/slider/Rectangle 4.jpg" alt="img6" />
+              </div>
+            </div>
+
+            <div class="swiper-wrapper slider__card">
+              <div class="swiper-slide slider__image">
+                <img src="./assets/images/slider/Rectangle 3.jpg" alt="img6" />
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 5,
+        spaceBetween: 80,
+        slidesPerGroup: 5,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
   </body>
 </html>
